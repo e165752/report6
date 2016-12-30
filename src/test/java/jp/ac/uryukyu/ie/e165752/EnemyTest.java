@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created by komineakina on 2016/12/28.
+ * Created by komineakina on 2016/12/30.
  */
 public class EnemyTest {
     /**

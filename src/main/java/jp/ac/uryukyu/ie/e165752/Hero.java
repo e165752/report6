@@ -2,7 +2,7 @@ package jp.ac.uryukyu.ie.e165752;
 
 /**
  * ヒーロークラス。
- *  Created by komineakina on 2016/12/28.
+ *  Created by komineakina on 2016/12/30.
  */
 public class Hero extends LivingThing{
 

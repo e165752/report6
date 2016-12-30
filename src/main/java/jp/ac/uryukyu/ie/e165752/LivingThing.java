@@ -6,7 +6,7 @@ package jp.ac.uryukyu.ie.e165752;
  *  int hitPoint; //スライム,勇者のHP
  *  int attack; //スライム,勇者の攻撃力
  *  boolean dead; //スライム,勇者の生死状態。true=死亡。
- *  Created by komineakina on 2016/12/28.
+ *  Created by komineakina on 2016/12/30.
  */
 public class LivingThing {
     private String name;
