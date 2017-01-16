@@ -6,7 +6,7 @@ package jp.ac.uryukyu.ie.e165752;
  *  int hitPoint; //スライム,勇者のHP
  *  int attack; //スライム,勇者の攻撃力
  *  boolean dead; //スライム,勇者の生死状態。true=死亡。
- *  Created by komineakina on 2016/12/30.
+ *  Created by komineakina on 2016/12/28.
  */
 public class LivingThing {
     private String name;
@@ -49,19 +49,23 @@ public class LivingThing {
         return hitPoint;
     }
 
+    public int getAttack(){
+        return attack;
+    }
+
     /**
      * 攻撃するメソッド。
      * attackに応じて乱数でダメージを算出し、wounded()によりダメージ処理を実行。
-     * @param oppone 攻撃対象
+     * @param opponent 攻撃対象
      */
 
-    public void attack(LivingThing oppone){
+    public void attack(LivingThing opponent){
         int damage = 0;
         if (dead == false) {
             damage = (int) (Math.random() * attack);
-            System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, oppone.getName(), damage);
+            System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, opponent.getName(), damage);
         }
-        oppone.wounded(damage);
+        opponent.wounded(damage);
     }
 
     /**
